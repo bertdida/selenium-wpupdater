@@ -1,4 +1,4 @@
-chromedriver_win32
-geckodriver_win64
+chromedriver_win32/
+geckodriver_win64/
 accounts.csv
 *.log
