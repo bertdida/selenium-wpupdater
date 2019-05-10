@@ -34,6 +34,7 @@ for account in accounts:
     form = query_selector('#loginform')
     form_action = form.get_attribute('action')
 
+    # for some reason, this fixes cookie issue
     if login_url != form_action:
         driver.get(form_action)
 
