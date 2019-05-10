@@ -55,22 +55,22 @@ for account in accounts:
 
     assert 'WordPress Updates' in driver.title
 
-    button_1 = query_selector('#upgrade[value="Update Now"]')
-    button_2 = query_selector('#upgrade-plugins')
-    button_3 = query_selector('#upgrade-themes')
+    version_button = query_selector('#upgrade[value="Update Now"]')
+    plugins_table = query_selector('#update-plugins-table')
+    themes_table = query_selector('#update-themes-table')
 
-    if button_1:
-        button_1.click()
+    if version_button:
+        version_button.click()
         driver.get(updates_url)
 
-    if button_2:
+    if plugins_table:
         query_selector('#plugins-select-all').click()
-        button_2.click()
+        query_selector('#upgrade-plugins').click()
         driver.get(updates_url)
 
-    if button_3:
+    if themes_table:
         query_selector('#themes-select-all').click()
-        button_3.click()
+        query_selector('#upgrade-themes').click()
 
     logout_link = query_selector('a[href*="logout"]')
     logout_url = logout_link.get_attribute('href')
