@@ -1,4 +1,5 @@
 import csv
+import time
 from selenium import webdriver
 
 CHROME_DRIVER_PATH = 'chromedriver_win32\\chromedriver.exe'
@@ -34,18 +35,18 @@ for account in accounts:
     form = query_selector('#loginform')
     form_action = form.get_attribute('action')
 
-    # fix for cookie issue
     if login_url != form_action:
         driver.get(form_action)
+
+    time.sleep(1)
 
     user_field = query_selector('#user_login')
     pass_field = query_selector('#user_pass')
 
     user_field.send_keys(username)
     pass_field.send_keys(password)
-
-    driver.implicitly_wait(2)
     pass_field.submit()
+    driver.refresh()
 
     assert 'Dashboard' in driver.title
 
