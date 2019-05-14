@@ -44,7 +44,7 @@ for account in accounts:
     user_field.send_keys(username)
     pass_field.send_keys(password)
 
-    driver.implicitly_wait(1)
+    driver.implicitly_wait(2)
     pass_field.submit()
 
     assert 'Dashboard' in driver.title
