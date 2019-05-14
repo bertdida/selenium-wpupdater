@@ -50,7 +50,7 @@ for account in accounts:
     assert 'Dashboard' in driver.title
 
     dashboard_url = driver.current_url
-    dashboard_url = dashboard_url[:dashboard_url.find('?')]
+    dashboard_url = dashboard_url[:dashboard_url.find('?')]  # remove query string
 
     updates_url = '{}/update-core.php'.format(dashboard_url.rstrip('/'))
     driver.get(updates_url)
