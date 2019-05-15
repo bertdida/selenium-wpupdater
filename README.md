@@ -8,7 +8,7 @@
 
 ## Installation
 
-1. Download and extract the zip file or use Git to clone this repository.
+1. Download and extract the [zip file](https://github.com/bertdida/selenium-wpupdater/archive/master.zip) or use Git to clone this repository.
 2. Inside the directory open a terminal and run:
 
     ```shell
