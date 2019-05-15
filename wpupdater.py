@@ -2,7 +2,7 @@ import csv
 import time
 from selenium import webdriver
 
-CHROME_DRIVER_PATH = 'chromedriver_win32\\chromedriver.exe'
+CHROMEDRIVER_PATH = 'chromedriver_win32\\chromedriver.exe'
 ACCOUNTS_PATH = 'accounts.csv'
 
 
@@ -14,7 +14,7 @@ def query_selector(selector):
     return elements[0] if elements else None
 
 
-driver = webdriver.Chrome(CHROME_DRIVER_PATH)
+driver = webdriver.Chrome(CHROMEDRIVER_PATH)
 
 with open(ACCOUNTS_PATH) as file:
     accounts = [dict(r) for r in csv.DictReader(file)]
