@@ -1,6 +1,6 @@
 # selenium-wpupdater
 
-This project updates your WP (WordPress) automatically. It reads a CSV file that contains WP URLs, usernames and passwords then simulate the following for each data set:
+This project helps you update WP (WordPress) automatically. It does this by reading a CSV file that contains WP URLs, usernames and passwords then simulate the following for each data set:
 
 1. Open a browser
 2. Login to WP dashboard
@@ -24,8 +24,8 @@ This project updates your WP (WordPress) automatically. It reads a CSV file that
 
 ## Usage
 
-1. Inside `wpupdater.py`, change `CHROMEDRIVER_PATH` value to your driver's path.
-2. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant details.
+1. Inside `wpupdater.py`, change `CHROMEDRIVER_PATH`'s' value to your driver's path.
+2. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant data.
 3. On the terminal run:
 
    ```shell
