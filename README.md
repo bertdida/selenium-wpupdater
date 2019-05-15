@@ -24,7 +24,7 @@ This project updates your WP (WordPress) automatically. It reads a CSV file that
 
 ## Usage
 
-1. Inside `wpupdater.py`, change `CHROMEDRIVER_PATH`'s value to your drivers path.
+1. Inside `wpupdater.py`, change `CHROMEDRIVER_PATH` value to your driver's path.
 2. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant details.
 3. On the terminal run:
 
