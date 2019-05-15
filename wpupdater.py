@@ -33,6 +33,7 @@ for account in accounts:
     form = query_selector('#loginform')
     form_action = form.get_attribute('action')
 
+    # fix for cookie issue
     if login_url != form_action:
         driver.get(form_action)
 
@@ -44,7 +45,7 @@ for account in accounts:
     user_field.send_keys(username)
     pass_field.send_keys(password)
     pass_field.submit()
-    driver.refresh()
+    driver.refresh()  # fix for cookie issue
 
     assert 'Dashboard' in driver.title
 
