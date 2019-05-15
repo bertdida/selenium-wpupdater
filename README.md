@@ -18,7 +18,7 @@ This project helps you automate WordPress' version, plugins, and themes updates.
 
 ## Usage
 
-1. Inside `wpupdater.py`, change `CHROMEDRIVER_PATH`'s value to your ChromeDrivers path.
+1. Inside `wpupdater.py`, change `CHROMEDRIVER_PATH`'s value to the path of your ChromeDriver.
 2. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant details.
 3. On the terminal run:
 
