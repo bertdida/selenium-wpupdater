@@ -17,7 +17,7 @@
 
 ## Usage
 
-1. Rename `test_accounts.csv` to remove `test_` then provide the relevant details.
+1. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant details.
 2. Open a terminal and run the following:
 
    ```shell
