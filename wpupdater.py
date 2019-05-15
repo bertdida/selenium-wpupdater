@@ -7,13 +7,11 @@ ACCOUNTS_PATH = 'test_accounts.csv'
 
 
 def query_selector(selector):
-    elements = query_selector_all(selector)
-    return elements[0] if elements else None
 
-
-def query_selector_all(selector):
     global driver
-    return driver.find_elements_by_css_selector(selector)
+
+    elements = driver.find_elements_by_css_selector(selector)
+    return elements[0] if elements else None
 
 
 driver = webdriver.Chrome(CHROME_DRIVER_PATH)
