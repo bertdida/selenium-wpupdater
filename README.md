@@ -17,7 +17,7 @@
 
 ## Usage
 
-1. Create `accounts.csv` file; this should contain the WordPress URLs, usernames and passwords. Check `test_accounts.csv` for example.
+1. Rename `test_accounts.csv` to remove `test_` then provide the relevant details.
 2. Open a terminal and run the following:
 
    ```shell
