@@ -18,8 +18,9 @@ This project helps you automate WordPress' version, plugins, and themes updates.
 
 ## Usage
 
-1. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant details.
-2. On the terminal run:
+1. Inside `wpupdater.py`, change `CHROMEDRIVER_PATH`'s value to what its name suggests.
+2. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant details.
+3. On the terminal run:
 
    ```shell
    pipenv shell
