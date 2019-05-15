@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 
 CHROME_DRIVER_PATH = 'chromedriver_win32\\chromedriver.exe'
-ACCOUNTS_PATH = 'test_accounts.csv'
+ACCOUNTS_PATH = 'accounts.csv'
 
 
 def query_selector(selector):
