@@ -1,6 +1,13 @@
 # selenium-wpupdater
 This project helps you automate WordPress' version, plugins, and themes updates.
 
+It simulates to do the following for each given account:
+
+1. open a browser
+2. login to WordPress
+3. update the WordPress version, plugins and themes if available
+4. logout
+
 ## Prerequisites
 
 - Python 3.6
