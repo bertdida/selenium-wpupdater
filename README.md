@@ -1,6 +1,6 @@
 # selenium-wpupdater
 
-This project helps you automate WP (WordPress) updates; it simulates to do the following for each given site:
+This project helps you automate WordPress (WP) updates. It reads the `accounts.csv` file and simulates the following for each site:
 
 1. Open a browser
 2. Login to WP dashboard
