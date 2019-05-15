@@ -25,3 +25,7 @@
    python wpupdater.py
    ```
 
+## Author
+
+Herbert Verdida / [@bertdida](https://twitter.com/bertdida)
+
