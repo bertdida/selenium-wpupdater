@@ -4,7 +4,7 @@
 
 - Python 3.6
 - [Pipenv](https://github.com/pypa/pipenv)
-- [Chrome driver](http://chromedriver.chromium.org/downloads)
+- [ChromeDriver](http://chromedriver.chromium.org/downloads)
 
 ## Installation
 
