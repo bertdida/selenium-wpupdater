@@ -1,4 +1,5 @@
 # selenium-wpupdater
+This project helps you automate WordPress' version, plugins, and themes updates.
 
 ## Prerequisites
 
