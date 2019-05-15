@@ -18,7 +18,7 @@
 ## Usage
 
 1. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant details.
-2. On the terminal run:
+2. On the terminal and run:
 
    ```shell
    pipenv shell
