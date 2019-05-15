@@ -14,7 +14,7 @@ def query_selector(selector):
     return elements[0] if elements else None
 
 
-driver = webdriver.Chrome(CHROMEDRIVER_PATH)
+driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH)
 
 with open(ACCOUNTS_PATH) as file:
     accounts = [dict(r) for r in csv.DictReader(file)]
