@@ -7,6 +7,3 @@ verify_ssl = true
 
 [packages]
 selenium = "*"
-
-[requires]
-python_version = "3.6"
