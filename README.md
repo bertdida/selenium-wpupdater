@@ -1,11 +1,11 @@
 # selenium-wpupdater
 
-This project helps you update WP (WordPress) automatically. It does this by reading a CSV file that contains WP URLs, usernames and passwords then simulate the following for each data set:
+This project helps you update WP (WordPress) automatically. It does this by reading a CSV file that contains WP URLs and their corresponding login details, then simulate the following for each data set:
 
-1. Open a browser
-2. Login to WP dashboard
-3. Check to see if core, plugin, and theme updates are available — if yes do update
-4. Logout
+1. Opens a browser
+2. Logs in to WP dashboard
+3. Checks to see if core, plugin, and theme updates are available — if yes do update
+4. Logs out to dashboard
 
 ## Prerequisites
 
