@@ -24,8 +24,8 @@ This project helps you update WP (WordPress) automatically. It does this by read
 
 ## Usage
 
-1. Edit `wpupdater.py` and set `CHROMEDRIVER_PATH` value to your driver's executable path.
-2. Rename `test_accounts.csv` to remove `test_` then update its contents for the relevant data.
+1. Edit **wpupdater.py** and set `CHROMEDRIVER_PATH` to your driver's executable path.
+2. Rename **test_accounts.csv** to remove **test_** then update its contents for the appropriate data.
 3. On the terminal run:
 
    ```shell
