@@ -9,7 +9,7 @@ This project helps you update WP (WordPress) automatically. It does this by read
 
 ## Prerequisites
 
-- Python 3.6
+- Python 2.7 or above
 - [Pipenv](https://github.com/pypa/pipenv)
 - [ChromeDriver](http://chromedriver.chromium.org/downloads)
 
