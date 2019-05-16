@@ -4,7 +4,7 @@ This project helps you update WP (WordPress) automatically. It does this by read
 
 1. Opens a browser
 2. Logs in to WP dashboard
-3. Checks to see if core, plugin, and theme updates are available — if yes do update
+3. Checks to see if any of core, plugin, and theme updates are available — if yes do update
 4. Logs out from the dashboard
 
 ## Prerequisites
