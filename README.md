@@ -9,7 +9,7 @@ This project helps you update WordPress (WP) automatically. It does this by pars
 
 ## Prerequisites
 
-- Python 2.7 or above
+- Python 3 or above
 - [Pipenv](https://github.com/pypa/pipenv)
 - [ChromeDriver](http://chromedriver.chromium.org/downloads)
 
