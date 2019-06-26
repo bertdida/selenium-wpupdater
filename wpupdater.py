@@ -1,6 +1,7 @@
 import csv
 import time
 from selenium import webdriver
+from urllib.request import urlopen, URLError, HTTPError
 
 CHROMEDRIVER_PATH = 'chromedriver_win32\\chromedriver.exe'
 ACCOUNTS_PATH = 'accounts.csv'
@@ -26,8 +27,14 @@ for account in accounts:
     password = account['password']
 
     login_url = '{}/wp-login.php'.format(url.rstrip('/'))
-    driver.get(login_url)
 
+    try:
+        urlopen(login_url)
+    except (URLError, HTTPError) as e:
+        print(e.reason, login_url)
+        continue
+
+    driver.get(login_url)
     assert 'Log In' in driver.title
 
     form = query_selector('#loginform')
