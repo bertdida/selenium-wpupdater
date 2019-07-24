@@ -8,6 +8,11 @@ ACCOUNTS_PATH = "accounts.csv"
 
 
 def query_selector(selector):
+    """I want to do if statements rather than multiple
+    try...catch for NoSuchElementException. So
+    find_elements_by_css_selector is used instead of
+    find_element_by_css_selector.
+    """
     global driver
 
     elements = driver.find_elements_by_css_selector(selector)
