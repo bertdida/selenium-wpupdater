@@ -8,7 +8,6 @@ ACCOUNTS_PATH = 'accounts.csv'
 
 
 def query_selector(selector):
-
     global driver
 
     elements = driver.find_elements_by_css_selector(selector)
@@ -21,7 +20,6 @@ with open(ACCOUNTS_PATH) as file:
     accounts = [dict(r) for r in csv.DictReader(file)]
 
 for account in accounts:
-
     url = account['url']
     username = account['username']
     password = account['password']
@@ -57,7 +55,8 @@ for account in accounts:
     assert 'Dashboard' in driver.title
 
     dashboard_url = driver.current_url
-    dashboard_url = dashboard_url[:dashboard_url.find('?')]  # remove query string
+    # remove query string
+    dashboard_url = dashboard_url[:dashboard_url.find('?')]
 
     updates_url = '{}/update-core.php'.format(dashboard_url.rstrip('/'))
     driver.get(updates_url)
