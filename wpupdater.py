@@ -2,21 +2,19 @@ import csv
 import time
 from selenium import webdriver
 from urllib.request import urlopen, URLError, HTTPError
+from selenium.common.exceptions import NoSuchElementException
 
 CHROMEDRIVER_PATH = "chromedriver_win32\\chromedriver.exe"
 ACCOUNTS_PATH = "accounts.csv"
 
 
 def query_selector(selector):
-    """I want to do if statements rather than multiple
-    try...catch for NoSuchElementException. So
-    find_elements_by_css_selector is used instead of
-    find_element_by_css_selector.
-    """
     global driver
 
-    elements = driver.find_elements_by_css_selector(selector)
-    return elements[0] if elements else None
+    try:
+        return driver.find_element_by_css_selector(selector)
+    except NoSuchElementException:
+        return None
 
 
 driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH)
